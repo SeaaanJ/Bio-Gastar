@@ -39,6 +39,7 @@ img{
 
 .parent{
     width: 90%;
+    margin-top: 20px;
     margin: 20px auto 0 auto;
     text-align: center;
     display: block;
@@ -68,7 +69,8 @@ img{
 }
 
 .textbc{
-    background-color: aqua;
+    background-color: rgb(248, 240, 230);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin-top: 0px;
 
@@ -80,8 +82,109 @@ img{
     transition: 0.5s
 }
 
+.btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Second page starts here */
+.scndPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(248, 240, 230);
+    border: 1px solid #ccc;
+}
 
+.scndPage button{
+    margin: auto;
+    position: absolute;
+    left: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+.form-container{
+    width: 90%;
+    max-width: 500px;
+    margin: 10px auto;
+    background-color: rgb(248, 240, 230);
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow: auto;
+    display: block;
+}
+
+.form-container label{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="number"],
+.form-container input[type="date"]{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-container input[type="checkbox"],
+.form-container input[type="radio"]{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.form-container select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-container textarea{
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.form-container input[type="button"]{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    margin-top: 10px;
+}
 
 @media screen and (max-width: 1024px) {
     .about, .skills, .achievements {
@@ -134,4 +237,55 @@ img{
     ul{
         list-style: none;
     }
+}}
+
+
+@media (max-width: 600px) {
+
+    .scndPage{
+        padding: 10px;
+    }
+
+    .scndPage button {
+    font-size: 0;  
+    left: 10px;
+    padding: 8px 14px;
+    margin: auto;
+}
+
+    .scndPage button svg + text,
+    .scndPage button text{
+        font-size: 0;
+    }
+
+    .scndPage button svg {
+        font-size: 0px;
+    }
+
+    .scndPage h1{
+        padding: 0%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .form-container{
+        width: 95%;
+        padding: 15px;
+    }
+
+    .form-container label{
+        font-size: 14px;
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container textarea{
+        font-size: 14px;
+    }
+
+    .form-container input[type="button"]{
+        width: 100%;
+    }
+
+     
 }
