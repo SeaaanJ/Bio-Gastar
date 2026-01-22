@@ -118,7 +118,7 @@ img{
     cursor: pointer;
 }
 
-.form-container{
+.container-fluid{
     width: 90%;
     max-width: 500px;
     margin: 10px auto;
@@ -130,17 +130,16 @@ img{
     display: block;
 }
 
-.form-container label{
-    display: inline-block;
-    margin-bottom: 10px;
-    font-weight: bold;
+.container-fluid label{
+   
+    
 }
 
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container input[type="password"],
-.form-container input[type="number"],
-.form-container input[type="date"]{
+.container-fluid input[type="text"],
+.container-fluid input[type="email"],
+.container-fluid input[type="password"],
+.container-fluid input[type="number"],
+.container-fluid input[type="date"]{
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -148,13 +147,13 @@ img{
     border-radius: 4px;
     box-sizing: border-box;
 }
-.form-container input[type="checkbox"],
-.form-container input[type="radio"]{
+.container-fluid input[type="checkbox"],
+.container-fluid input[type="radio"]{
     margin-right: 10px;
     display: inline-block;
 }
 
-.form-container select{
+.container-fluid select{
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -163,7 +162,7 @@ img{
     box-sizing: border-box;
 }
 
-.form-container textarea{
+.container-fluid textarea{
     width: 100%;
     height: 100px;
     padding: 8px;
@@ -173,7 +172,7 @@ img{
     resize: vertical;
 }
 
-.form-container input[type="button"]{
+.container-fluid input[type="button"]{
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
@@ -184,6 +183,15 @@ img{
     display: block;
     margin-right: auto;
     margin-top: 10px;
+}
+
+textarea.form-control {
+    height: 60px;          /* original size */
+    transition: height 0.3s ease;
+}
+
+textarea.form-control:focus {
+    height: 150px;         /* expanded when clicked */
 }
 
 @media screen and (max-width: 1024px) {
